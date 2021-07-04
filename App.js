@@ -1,19 +1,23 @@
-import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import React from 'react';
+import { Text, TextInput, View } from 'react-native';
 
-class App extends Component {
-    render() {
-        return (
-            <View
-                style={{
-                    flex: 1,
-                    justifyContent: "center",
-                    alignItems: "center"
-                }}>
-                <Text>Hello, world!</Text>
-            </View>
-        );
-    }
+const Cat = () => {
+    return (
+        <View>
+            <Text>I am also a cat!</Text>
+        </View>
+    );
 }
 
-export default App;
+const Cafe = () => {
+    return (
+        <View>
+            <Text>Welcome!</Text>
+            <Cat />
+            <Cat />
+            <Cat />
+        </View>
+    );
+}
+
+export default Cafe;
